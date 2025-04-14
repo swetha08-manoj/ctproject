@@ -1,0 +1,233 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6200ea;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd54f;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(to right, #6200ea, #3700b3);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: white;
+  color: #6200ea;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffd54f;
+  color: #333;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+section:nth-child(odd) {
+  background-color: #e9e9f3;
+}
+
+h2 {
+  color: #6200ea;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Projects */
+.project {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 5px solid #6200ea;
+  border-radius: 8px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6200ea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #d1c4e9;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Contact */
+#contact a {
+  color: #3700b3;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ccc;
+}
+/* Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Back to Top Button */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #3700b3;
+}
+.header-pfp {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd54f;
+  box-shadow: 0 0 12px rgba(255, 213, 79, 0.6);
+  margin-bottom: 20px;
+}
+/* Academics Section */
+.academics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.academic-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #6200ea;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.academic-item h3 {
+  color: #3700b3;
+  margin-bottom: 10px;
+}
+
+.academic-item:hover {
+  transform: scale(1.05);
+}
+
+

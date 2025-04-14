@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swetha's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img src="swetha.jpeg" alt="Swetha's Profile Picture" class="header-pfp">
+
+   
+
+    <div class="logo">Swetha</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#academics">Academics</a></li>
+
+      
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <header id="home">
+    <h1>Digital Portfolio</h1>
+    <p>Aspiring AI/ML Engineer | BTech Student</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Swetha Manoj a first-year BTech student studying in MIT AOE ,passionate about Artificial Intelligence and Machine Learning. I love solving problems, learning new technologies, and building cool projects!</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>AI Chatbot</h3>
+      <p>A chatbot built using Python and NLP libraries like NLTK. It can respond to user input and simulate a real conversation.</p>
+      <a href="https://github.com/swetha08-manoj/ai-chatbot" target="_blank">View Code</a>
+
+    </div>
+    <div class="project">
+      <h3>Student Grade Predictor</h3>
+      <p>Machine Learning model to predict student performance based on past academic data.</p>
+      <a href="https://github.com/swetha08-manoj/grade-predictor" target="_blank">View Code</a>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-icons">
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fas fa-brain"></i> Machine Learning</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-github"></i> Git & GitHub</li>
+      </ul>
+      
+      
+  </section>
+  <!-- Academics Section -->
+<section id="academics">
+  <h2>Academics</h2>
+  <div class="academics-container">
+    <div class="academic-item">
+      <h3>SSC</h3>
+      <p>Percentage: <strong>95.8%</strong></p>
+    </div>
+    <div class="academic-item">
+      <h3>HSC</h3>
+      <p>Percentage: <strong>73.3%</strong></p>
+    </div>
+    <div class="academic-item">
+      <h3>CET</h3>
+      <p>Percentile: <strong>93.3%</strong></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:202401110049@mitaoe.ac.in">202401110049@mitaoe.ac.in</a></p>
+    <p>GitHub: <a href="https://github.com/swetha08-manoj" target="_blank">swethamanoj</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/swethamanoj" target="_blank">linkedin.com/in/swethamanoj</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/swethhaa_a/" target="_blank">Instagram</a></p>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Swetha Manoj</p>
+  </footer>
+  <!-- Back to Top Button -->
+<button id="backToTop" title="Back to Top">↑</button>
+
+<!-- Script for fade-in and back to top -->
+<script>
+  // Fade-in on scroll
+  const sections = document.querySelectorAll("section, header");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("fade-in", entry.isIntersecting);
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+  });
+
+  // Back to Top button
+  const topBtn = document.getElementById("backToTop");
+  window.onscroll = function() {
+    topBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+  };
+
+  topBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+
+</body>
+</html>
